@@ -23,9 +23,8 @@ This project uses Python to explore coffee shop sales, product performance, purc
 - Order segmentation and business recommendations
 
 ## Visualizations
-![Revenue by product](images/revenue_by_product.png)
-
-![Revenue heatmap](images/sales_heatmap.png)
+![Revenue by Product](revenue_by_product.png)
+![Sales Heatmap](sales_heatmap.png)
 
 ## Tools
 Python, Pandas, Matplotlib, Seaborn and Jupyter Notebook.
