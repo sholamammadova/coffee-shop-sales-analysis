@@ -1,49 +1,121 @@
-# Coffee Shop Sales — Exploratory Data Analysis
 
-## Project overview
-This project uses Python to explore coffee shop sales, product performance, purchasing patterns and revenue drivers, with the aim of identifying actionable business insights.
+# ☕ Coffee Shop Sales Analysis
 
-## Key findings
+## 📌 Project Overview
+
+This project presents an exploratory data analysis
+(EDA) of coffee shop sales using Python.
+
+The objective is to evaluate sales performance,
+identify purchasing patterns, understand revenue
+drivers, and provide actionable business recommendations.
+
+## 🛠️ Technologies & Tools
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+- GitHub
+
+## 📊 Key Performance Indicators
+
 | Metric | Result |
 |---|---:|
-| Transaction records | 970 |
-| Total revenue | 12,558 AZN |
-| Average revenue per record | 12.95 AZN |
-| Card payments | 65.77% |
-| Highest-revenue product | Mocha (3,030.50 AZN) |
-| Highest quantity sold | Latte (512 units) |
-| Quantity–revenue correlation | 0.874 |
+| Total Orders | 970 |
+| Total Revenue | 12,558 AZN |
+| Average Order Value | 12.95 AZN |
+| Card Payment Share | 65.77% |
+| Highest Revenue Product | Mocha |
+| Best-Selling Product by Quantity | Latte |
 
-## Analysis scope
-- Data overview and descriptive statistics
-- Product performance and payment methods
-- Order size and revenue distribution
-- Daily sales and weekday/weekend comparisons
-- Correlation and multivariate analysis
-- Order segmentation and business recommendations
+## 🔍 Analysis Scope
 
-## Visualizations
-![Revenue by Product](revenue_by_product.png)
-![Sales Heatmap](sales_heatmap.png)
+- Data quality assessment
+- Key performance indicators
+- Product performance analysis
+- Payment method analysis
+- Order quantity and revenue distribution
+- Weekday and weekend sales analysis
+- Correlation analysis
+- Multivariate analysis
+- Order segmentation
 
-## Tools
-Python, Pandas, Matplotlib, Seaborn and Jupyter Notebook.
+## 💡 Key Business Insights
 
-## How to run
-1. Clone or download this repository.
-2. Install dependencies: `pip install -r requirements.txt`.
-3. Place an authorized, anonymized copy of `coffee_shop_final.csv` in the repository root. The dataset is not included in this package.
-4. Open `coffee_shop_eda.ipynb` in Jupyter and run the cells in order.
+- Mocha generates the highest sales revenue.
+- Latte is the best-selling product by quantity.
+- Card payments are the preferred payment method.
+- Cash payments have a slightly higher average order value.
+- Product prices and order quantities influence revenue.
 
-Saved notebook outputs can be viewed without the CSV. The notebook has not been re-executed during packaging.
+### Weekday vs Weekend Performance
 
-## Business recommendations
-- Test bundles and promotions for lower-selling products.
+| Metric | Weekday | Weekend |
+|---|---:|---:|
+| Orders | 629 | 235 |
+| Revenue (AZN) | 8,149.50 | 3,018.00 |
+
+An additional 106 orders without valid dates,
+representing 1,390.50 AZN in revenue, were excluded
+from date-based analysis but retained in overall metrics.
+
+Aggregate weekday and weekend revenue should not
+be interpreted as average daily performance.
+
+## 📈 Business Recommendations
+
+- Promote lower-selling products through targeted offers.
+- Introduce product bundles to increase order value.
 - Maintain convenient card payment options.
-- Use observed sales patterns to inform staffing and inventory planning.
+- Optimize inventory based on product demand.
+- Plan staffing based on observed sales patterns.
+- Test targeted promotions before full implementation.
 
-## Limitations
-- 106 records lack dates and 21 lack product names. Missing dates may bias weekday/weekend comparisons because some undated records are classified as weekdays.
-- The number of unique order IDs has not been verified; the reported count is a record count.
-- Results are descriptive rather than causal and may not predict future demand.
-- Dataset provenance and redistribution permissions should be confirmed before publishing the CSV.
+## ⚠️ Data Quality & Limitations
+
+- 106 orders contain missing or invalid dates.
+- 21 orders contain missing product names.
+- 65 records contain inconsistencies between recorded
+  revenue and Quantity × Price.
+- Recorded revenue values were retained because
+  underlying transaction details were unavailable.
+- Customer names were removed for privacy.
+- Historical sales patterns do not guarantee
+  future customer behavior.
+
+## 📂 Project Structure
+
+- `coffee_shop_eda.ipynb` — Main analysis notebook
+- `coffee_shop_final.csv` — Dataset
+- `requirements.txt` — Python dependencies
+- `README.md` — Project documentation
+
+## 🚀 How to Run
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sholamammadova/coffee-shop-sales-analysis.git
+cd coffee-shop-sales-analysis
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Open `coffee_shop_eda.ipynb` using Jupyter Notebook
+or JupyterLab and run all cells sequentially.
+
+## 👩‍💻 Author
+
+**Shola Mammadova**
+
+Data Analyst | Python | SQL | Power BI | Excel
+
+[GitHub Profile](https://github.com/sholamammadova)
+
